@@ -8,7 +8,7 @@
   margin-bottom: 1.5rem;
 }
 .hero-icon { font-size: 40px; margin-bottom: 8px; }
-.hero h1 { font-size: 26px; font-weight: 600; margin-bottom: 4px; }
+.hero h1 { font-size: 40px; font-weight: 600; margin-bottom: 4px; }
 .hero p { font-size: 14px; opacity: .85; }
 .tabs {
   display: flex;

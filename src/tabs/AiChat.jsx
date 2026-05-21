@@ -10,8 +10,8 @@ const SYSTEM = `Та "Тус" гэдэг монгол үлгэрийн мэрг�
 const SUGGESTIONS = [
   'Үлгэрийн гол санаа юу вэ?',
   'Өвгөн ямар хүн бэ?',
-  'Генри Форд хэн бэ?',
-  'Сургамж юу вэ?',
+  'Генри Форд гэж хэн бэ?',
+  'Яг ямар сургамж бидэнд хүргэхийг зорьсон бэ?',
 ]
 
 export default function AiChat() {
@@ -62,7 +62,7 @@ export default function AiChat() {
       <div className="chat-header">
         <div className="chat-avatar">🤖</div>
         <div>
-          <div className="chat-title">Тус — Ухаалаг туслагч</div>
+          <div className="chat-title">Тус — Багшийн туслах</div>
           <div className="chat-sub">Зохиолын талаар асуугаарай</div>
         </div>
       </div>

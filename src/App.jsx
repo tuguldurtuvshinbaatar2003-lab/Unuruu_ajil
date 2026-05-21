@@ -17,9 +17,9 @@ export default function App() {
   return (
     <div className="page">
       <header className="hero">
-        <div className="hero-icon">🤝</div>
-        <h1>Тус</h1>
-        <p>Монгол хэлний үлгэр · Интерактив сурах орчин</p>
+        {/* <div className="hero-icon">🤝</div> */}
+        <h1>3-р анги</h1>
+        <p>Монгол үлгэр · Интерактив сурах орчин</p>
       </header>
       <nav className="tabs">
         {TABS.map(t => (
@@ -36,7 +36,7 @@ export default function App() {
         {active === 'unshikh' && <Unshikh />}
         {active === 'ai'      && <AiChat />}
       </main>
-      <footer className="footer">🤝 Тус · Монгол хэлний үлгэр</footer>
+      <footer className="footer">3-р ангийн монгол хэлний үлгэр</footer>
     </div>
   )
 }
