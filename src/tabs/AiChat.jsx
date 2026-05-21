@@ -32,16 +32,17 @@ export default function AiChat() {
     const newHistory = [...history, { role: 'user', content: msg }]
     setHistory(newHistory)
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 1000,
-          system: SYSTEM,
-          messages: newHistory,
-        }),
-      })
+      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            model: 'openai/gpt-4o-mini',
+            messages: newHistory,
+          }),
+        });
       const data = await res.json()
       const reply = data.content?.[0]?.text || 'Уучлаарай, алдаа гарлаа.'
       setMsgs(m => [...m, { role: 'bot', text: reply }])
