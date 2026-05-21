@@ -15,7 +15,7 @@ const SUGGESTIONS = [
 ]
 
 export default function AiChat() {
-  const [msgs, setMsgs] = useState([{ role: 'bot', text: 'Сайн байна уу! Би "Тус" үлгэрийн тухай бүх асуултад хариулна. Юу мэдэхийг хүсч байна вэ? 🤝' }])
+  const [msgs, setMsgs] = useState([{ role: 'bot', text: 'Сайн байна уу! Би "3-р анги" үлгэрийн тухай бүх асуултад хариулна. Юу мэдэхийг хүссэн асуултаа асуугаарай?' }])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [history, setHistory] = useState([])
