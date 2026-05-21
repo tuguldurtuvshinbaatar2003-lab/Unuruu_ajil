@@ -40,28 +40,27 @@ const SLIDES = [
 ]
 
 function Scene({ type, bg }) {
-  const svgs = {
-    road: (
-      "/images/road.png"
-    ),
-    tow: (
-      "/images/tow.png"
-    ),
-    money: (
-      "/images/money.png"
-    ),
-    hard: (
-      "/images/life.png"
-    ),
-    letter: (
-      "/images/tugsgul.png"
-    ),
-  }
+  const images = {
+    road: "/images/road.png",
+    tow: "/images/tow.png",
+    money: "/images/money.png",
+    hard: "/images/life.png",
+    letter: "/images/tugsgul.png",
+  };
+
   return (
-    <div className="scene-area" >
-      <img src={images[type]} alt={type} style={{ width: "100%", height: "100%", objectFit: "cover" }}/>
+    <div className="scene-area" style={{ background: bg }}>
+      <img
+        src={images[type]}
+        alt={type}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover"
+        }}
+      />
     </div>
-  )
+  );
 }
 
 export default function Durslel() {
