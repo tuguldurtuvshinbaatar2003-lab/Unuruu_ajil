@@ -41,11 +41,11 @@ const SLIDES = [
 
 function Scene({ type, bg }) {
   const images = {
-    road: "/public/images/road.png",
-    tow: "/public/images/tow.png",
-    money: "/public/images/money.png",
-    hard: "/public/images/life.png",
-    letter: "/public/images/tugsgul.png",
+    road: "public/images/road.png",
+    tow: "public/images/tow.png",
+    money: "public/images/money.png",
+    hard: "public/images/life.png",
+    letter: "public/images/tugsgul.png",
   };
 
   return (
