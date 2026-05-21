@@ -62,7 +62,7 @@ export default function AiChat() {
       <div className="chat-header">
         <div className="chat-avatar">🤖</div>
         <div>
-          <div className="chat-title">Тус — Багшийн туслах</div>
+          <div className="chat-title">3-р анги — Багшийн туслах</div>
           <div className="chat-sub">Зохиолын талаар асуугаарай</div>
         </div>
       </div>
