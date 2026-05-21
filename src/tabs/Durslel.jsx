@@ -42,7 +42,7 @@ const SLIDES = [
 function Scene({ type, bg }) {
   const images = {
     road: "/images/road.png",
-    tow: "/images/tow.png",
+    tow: "/images/tuw.png",
     money: "/images/money.png",
     hard: "/images/life.png",
     letter: "/images/tugsgul.png",
