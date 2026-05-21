@@ -15,7 +15,7 @@ const SUGGESTIONS = [
 ]
 
 export default function AiChat() {
-  const [msgs, setMsgs] = useState([{ role: 'bot', text: 'Сайн байна уу! Би "3-р анги" үлгэрийн тухай бүх асуултад хариулна. Юу мэдэхийг хүссэн асуултаа асуугаарай?' }])
+  const [msgs, setMsgs] = useState([{ role: 'bot', text: 'Сайн байна уу! Би "3-р анги" үлгэрийн тухай бүх асуултад хариулна. Мэдэхийг хүссэн асуултаа асуугаарай?' }])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [history, setHistory] = useState([])
@@ -70,7 +70,7 @@ export default function AiChat() {
         {msgs.map((m, i) => (
           <div key={i} className={`msg msg-${m.role}`}>{m.text}</div>
         ))}
-        {loading && <div className="msg msg-bot msg-thinking">Бодож байна...</div>}
+        {loading && <div className="msg msg-bot msg-thinking">Түр хүлээж байгаарай...</div>}
         <div ref={bottomRef} />
       </div>
       <div className="suggest-row">
