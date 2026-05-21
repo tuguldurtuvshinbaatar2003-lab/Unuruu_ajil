@@ -29,7 +29,11 @@ export default function AiChat() {
     setInput('')
     setMsgs(m => [...m, { role: 'user', text: msg }])
     setLoading(true)
-    const newHistory = [...history, { role: 'user', content: msg }]
+    const newHistory = [
+  { role: 'system', content: SYSTEM },
+  ...history,
+  { role: 'user', content: msg }
+]
     setHistory(newHistory)
     try {
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -44,7 +48,7 @@ export default function AiChat() {
           }),
         });
       const data = await res.json()
-      const reply = data.content?.[0]?.text || 'Уучлаарай, алдаа гарлаа.'
+      const reply = data.choices?.[0]?.message?.content || 'Уучлаарай, алдаа гарлаа.'
       setMsgs(m => [...m, { role: 'bot', text: reply }])
       setHistory(h => [...h, { role: 'assistant', content: reply }])
     } catch {
