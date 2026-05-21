@@ -1,0 +1,6 @@
+.para-list { display: flex; flex-direction: column; gap: 10px; }
+.para-item { background: #fff; border: 1px solid #f0e8e4; border-radius: 12px; padding: 1rem 1.25rem; }
+.para-item.para-highlight { border-color: #e8513a; background: #fef3f0; }
+.para-num { font-size: 11px; color: #bbb; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .05em; }
+.para-text { font-size: 14px; line-height: 1.8; color: #333; }
+.hi-word { background: none; color: #e8513a; font-weight: 600; }
